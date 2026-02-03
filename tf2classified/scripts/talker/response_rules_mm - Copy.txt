@@ -1,0 +1,117 @@
+//-----------------------------
+//--CRITERIA--
+//-----------------------------
+//Scout
+criterion "WeaponIsFAN" "item_name" "TF_WEAPON_DOUBLE_BARREL" "required" weight 10 //These are here to define necessary weapons (showing the game they exist as valid criteria)
+criterion "WeaponIsShortstopMM" "item_name" "TF_WEAPON_SHORTSTOP" "required" weight 10 //"WeaponIsShortstop" already exists as a criterion, but it doesn't use the weapon name that I do for MM
+criterion "WeaponIsBonk" "item_name" "TF_WEAPON_ENERGY_DRINK" "required" weight 10
+criterion "WeaponIsMIRV2" "playerweapon" "tf_weapon_grenade_mirv2" "required" weight 10
+criterion "WeaponIsCritCola" "item_name" "TF_WEAPON_ENERGY_DRINK_CRIT" "required" weight 10 //Note: What's referred to as the "item_name" here is actually the "name" name (internal name)
+criterion "WeaponIsPassTimeJack" "item_name" "TF_WEAPON_PASSTIMEJACK" "required" weight 10
+criterion "WeaponIsSandman" "item_name" "TF_WEAPON_WOOD_BAT" "required" weight 10
+criterion "WeaponIsAtomizer" "item_name" "TF_WEAPON_ATOMIZER" "required" weight 10
+criterion "WeaponIsFANFestive" "item_name" "TF_WEAPON_DOUBLE_BARREL_FESTIVE" "required" weight 10
+criterion "WeaponIsBonkFestive" "item_name" "TF_WEAPON_ENERGY_DRINK_FESTIVE" "required" weight 10
+//Soldier
+criterion "WeaponIsDirectHitMM" "item_name" "TF_WEAPON_DIRECTHIT" "required" weight 10
+criterion "WeaponIsBeggarsBazookaMM" "item_name" "TF_WEAPON_DUMPSTERDEVICE" "required" weight 10
+criterion "WeaponIsCowManglerMM" "item_name" "TF_WEAPON_COWMANGLER" "required" weight 10
+criterion "WeaponIsRighteousBison" "item_name" "TF_WEAPON_BISON" "required" weight 10
+criterion "WeaponIsSpellbookSoldier" "item_name" "TF_WEAPON_SPELLBOOK_MERASMUSBOMB" "required" weight 10
+criterion "WeaponIsGrappleHookSoldier" "item_name" "TF_WEAPON_GRAPPLINGHOOK_SOLDIER" "required" weight 10
+criterion "WeaponIsEqualizerMM" "item_name" "TF_WEAPON_EQUALIZER" "required" weight 10
+criterion "WeaponIsKatanaSoldier" "item_name" "TF_WEAPON_KATANA_SOLDIER" "required" weight 10
+criterion "WeaponIsBuffBanner" "item_name" "TF_WEAPON_BANNER" "required" weight 10
+criterion "WeaponIsBattalionBackup" "item_name" "TF_WEAPON_BATTALION" "required" weight 10
+criterion "WeaponIsConch" "item_name" "TF_WEAPON_CONCH" "required" weight 10
+criterion "WeaponIsRidingCrop" "item_name" "TF_WEAPON_RIDING_CROP" "required" weight 10
+criterion "WeaponIsBuffBannerFestive" "item_name" "TF_WEAPON_BANNER_FESTIVE" "required" weight 10
+//Pyro
+criterion "WeaponIsRainblowerMM" "item_name" "TF_WEAPON_RAINBLOWER" "required" weight 10
+criterion "WeaponIsDragonFury" "item_name" "TF_WEAPON_FIREBALL_LAUNCHER" "required" weight 10
+criterion "WeaponIsScorchShotMM" "item_name" "TF_WEAPON_SCORCHSHOT" "required" weight 10
+criterion "WeaponIsJetpack" "item_name" "TF_WEAPON_JETPACK_PYRO" "required" weight 10
+criterion "WeaponIsGasCan" "item_name" "TF_WEAPON_GASCAN" "required" weight 10
+criterion "WeaponIsSpellbookPyro" "item_name" "TF_WEAPON_SPELLBOOK_FIREBALL" "required" weight 10
+criterion "WeaponIsGrappleHookPyro" "item_name" "TF_WEAPON_GRAPPLINGHOOK_PYRO" "required" weight 10
+criterion "WeaponIsLollichopMM" "item_name" "TF_WEAPON_LOLLICHOP" "required" weight 10
+criterion "WeaponIsHomewrecker" "playerweapon" "tf_weapon_wrench" "required" weight 10
+criterion "WeaponIsThirdDegreeMM" "item_name" "TF_WEAPON_THIRDDEGREE" "required" weight 10
+criterion "WeaponIsNeonAnnihilator" "playerweapon" "tf_weapon_taser" "required" weight 10
+//Demoman
+criterion "WeaponIsScottishResistance" "item_name" "TF_WEAPON_SCOTTISH_RESISTANCE" "required" weight 10
+criterion "WeaponIsSpellbookDemoman" "item_name" "TF_WEAPON_SPELLBOOK_PUMPKINBOMB" "required" weight 10
+criterion "WeaponIsGrappleHookDemoman" "item_name" "TF_WEAPON_GRAPPLINGHOOK_DEMOMAN" "required" weight 10
+criterion "WeaponIsPainTrainDemo" "item_name" "TF_WEAPON_PAIN_TRAIN_DEMOMAN" "required" weight 10
+criterion "WeaponIsUllapoolCaber" "item_name" "TF_WEAPON_CABER" "required" weight 10
+criterion "WeaponIsEyelander" "item_name" "TF_WEAPON_SWORD" "required" weight 10
+criterion "WeaponIsGolfClub" "item_name" "TF_WEAPON_GOLF_CLUB" "required" weight 10
+criterion "WeaponIsHeadtaker" "item_name" "TF_WEAPON_HHH" "required" weight 10
+criterion "WeaponIsClaidheamh" "item_name" "TF_WEAPON_CLAIDHEAMH" "required" weight 10
+criterion "WeaponIsKatanaDemoman" "item_name" "TF_WEAPON_KATANA_DEMOMAN" "required" weight 10
+criterion "WeaponIsPersianSword" "item_name" "TF_WEAPON_PERSUADER" "required" weight 10
+criterion "WeaponIsSkullcutter" "item_name" "TF_WEAPON_SKULLCUTTER" "required" weight 10
+criterion "WeaponIsEyelanderFestive" "item_name" "TF_WEAPON_SWORD_FESTIVE" "required" weight 10
+//Heavy
+criterion "WeaponIsNotSandvichMM" "loadout_slot_secondary" "!=#TF_Unique_Achievement_LunchBox" "required" weight 10
+criterion "WeaponIsSpellbookHeavy" "item_name" "TF_WEAPON_SPELLBOOK_ROCKETPUNCH" "required" weight 10
+criterion "WeaponIsGrappleHookHeavy" "item_name" "TF_WEAPON_GRAPPLINGHOOK_HEAVY" "required" weight 10
+criterion "WeaponIsApocoFists" "item_name" "TF_WEAPON_APOCOFISTS" "required" weight 10
+criterion "WeaponIsKGB" "item_name" "TF_WEAPON_BOXING_GLOVES" "required" weight 10
+criterion "WeaponIsGRU" "item_name" "TF_WEAPON_GLOVES_URGENT" "required" weight 10
+criterion "WeaponIsBreadBite" "item_name" "TF_WEAPON_BREAD_FISTS" "required" weight 10
+criterion "WeaponIsWarriorSpirit" "item_name" "TF_WEAPON_WARRIORSPIRIT" "required" weight 10
+criterion "WeaponIsSteelFists" "item_name" "TF_WEAPON_FISTS_OF_STEEL" "required" weight 10
+criterion "WeaponIsEvictionNotice" "item_name" "TF_WEAPON_BRASS_KNUCKLES" "required" weight 10
+criterion "WeaponIsHolidayPunch" "item_name" "TF_WEAPON_HOLIDAY_PUNCH" "required" weight 10
+criterion "WeaponIsGRUFestive" "item_name" "TF_WEAPON_GLOVES_URGENT_FESTIVE" "required" weight 10
+//Engineer
+criterion "WeaponIsFrontierJusticeMM" "item_name" "TF_WEAPON_FRONTIERJUSTICE" "required" weight 10
+criterion "WeaponIsFrontierJusticeFestive" "item_name" "TF_WEAPON_FRONTIERJUSTICE_FESTIVE" "required" weight 10
+criterion "WeaponIsShortCircuitMM" "item_name" "TF_WEAPON_SHORT_CIRCUIT" "required" weight 10
+criterion "WeaponIsSpellbookEngineer" "item_name" "TF_WEAPON_SPELLBOOK_PORTABLE_DISPENSER" "required" weight 10
+criterion "WeaponIsGoldWrench" "item_name" "TF_WEAPON_GOLDEN_WRENCH" "required" weight 10
+criterion "WeaponIsEurekaEffectMM" "item_name" "TF_WEAPON_EUREKA_EFFECT" "required" weight 10
+criterion "WeaponIsGunslinger" "item_name" "TF_WEAPON_GUNSLINGER" "required" weight 10
+//Medic
+criterion "WeaponIsCrossbow" "item_name" "TF_WEAPON_CROSSBOW" "required" weight 10
+criterion "WeaponIsSpellbookMedic" "item_name" "TF_WEAPON_SPELLBOOK_HEALAURA" "required" weight 10
+criterion "WeaponIsGrappleHookMedic" "item_name" "TF_WEAPON_GRAPPLINGHOOK_MEDIC" "required" weight 10
+criterion "WeaponIsQuickFix" "item_name" "TF_WEAPON_QUICK_FIX" "required" weight 10
+criterion "WeaponIsUbersawMM" "item_name" "TF_WEAPON_UBERSAW" "required" weight 10
+criterion "WeaponIsSolemnVow" "item_name" "TF_WEAPON_SOLEMN_VOW" "required" weight 10
+criterion "WeaponIsCrossbowFestive" "item_name" "TF_WEAPON_CROSSBOW_FESTIVE" "required" weight 10
+//Sniper
+criterion "WeaponIsSpellbookSniper" "item_name" "TF_WEAPON_SPELLBOOK_HOROLOGY" "required" weight 10
+criterion "WeaponIsGrappleHookSniper" "item_name" "TF_WEAPON_GRAPPLINGHOOK_SNIPER" "required" weight 10
+//Spy
+criterion "WeaponIsGrappleHookSpy" "item_name" "TF_WEAPON_GRAPPLINGHOOK_SPY" "required" weight 10
+criterion "WeaponIsSapper" "playerweapon" "tf_weapon_sapper" "required" weight 10
+criterion "WeaponIsSharpDresserMM" "item_name" "TF_WEAPON_SHARP_DRESSER" "required" weight 10
+//Civilian
+criterion "WeaponIsFisticuffs" "item_name" "TF_WEAPON_FISTICUFFS" "required" weight 10
+criterion "WeaponIsSpanner" "item_name" "TF_WEAPON_SPANNER" "required" weight 10
+criterion "WeaponIsHandgun" "item_name" "TF_WEAPON_CIV_GUN" "required" weight 10
+//All-Class
+criterion "WeaponIsFryingPanScout" "item_name" "TF_WEAPON_FRYING_PAN_SCOUT" "required" weight 10
+criterion "WeaponIsFryingPanSoldier" "item_name" "TF_WEAPON_FRYING_PAN_SOLDIER" "required" weight 10
+criterion "WeaponIsFryingPanPyro" "item_name" "TF_WEAPON_FRYING_PAN_PYRO" "required" weight 10
+criterion "WeaponIsFryingPanDemoman" "item_name" "TF_WEAPON_FRYING_PAN_DEMO" "required" weight 10
+criterion "WeaponIsFryingPanHeavy" "item_name" "TF_WEAPON_FRYING_PAN_HEAVY" "required" weight 10
+criterion "WeaponIsFryingPanEngineer" "item_name" "TF_WEAPON_FRYING_PAN_ENGINEER" "required" weight 10
+criterion "WeaponIsFryingPanMedic" "item_name" "TF_WEAPON_FRYING_PAN_MEDIC" "required" weight 10
+criterion "WeaponIsFryingPanSniper" "item_name" "TF_WEAPON_FRYING_PAN_SNIPER" "required" weight 10
+criterion "WeaponIsFryingPanSpy" "item_name" "TF_WEAPON_FRYING_PAN_SPY" "required" weight 10
+//-----------------------------
+//--SCOUT RULES--
+//-----------------------------
+Response ScoutTauntBonk
+{
+	scene "scenes/Player/Scout/low/taunt04_v1.vcd" //For custom taunts to play, they require VCDs, which are basically files that tell the game what face flex, voice line and animation to play when a specific thing happens.
+}
+
+rule ScoutTauntSecondaryBonk //2.2 introduced Mapbase to TF2C, which among other things gives you the ability to load your own VCDs.
+{
+	criteria ConceptPlayerTaunt IsScout WeaponIsLunchboxDrink //Scout's bonk drinking anim isn't in the game by default, so I added it as well as all the other taunts...
+	response ScoutTauntBonk //...that were in the scenes.image file, which are only the ones Valve made and none of the workshop ones. I need to find those...
+}

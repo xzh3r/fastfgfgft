@@ -1,0 +1,13 @@
+//-----------------------------
+//--SCOUT RULES--
+//-----------------------------
+Response ScoutTauntBonk
+{
+	scene "scenes/Player/Scout/low/taunt04_v1.vcd" //For custom taunts to play, they require VCDs, which are basically files that tell the game what face flex, voice line and animation to play when a specific thing happens.
+}
+
+rule ScoutTauntSecondaryBonk //2.2 introduced Mapbase to TF2C, which among other things gives you the ability to load your own VCDs.
+{
+	criteria ConceptPlayerTaunt IsScout WeaponIsLunchboxDrink //Scout's bonk drinking anim isn't in the game by default, so I added it as well as all the other taunts...
+	response ScoutTauntBonk //...that were in the scenes.image file, which are only the ones Valve made and none of the workshop ones. I need to find those...
+}
